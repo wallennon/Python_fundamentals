@@ -1,0 +1,5 @@
+Model = responsável pela lógica de negócio e pelos dados da aplicação. Ele representa a camada de acesso aos dados, onde são realizadas as operações de leitura, escrita e manipulação dos dados. Também define as regras de negócio, validação e comportamentos da aplicação.
+
+View = responsável pela apresentação dos dados ao usuário. Define como os dados serão exividos, em que formato e de que maneira. Não possui lógica de negócio, sendo apenas responsável por exibir os dados de maneira clara e intuitiva para o usuário.
+
+Controller = responsável por receber as requisições do usuário, processá-las e interagir com o modelo e a visualização. Atua como intermediário entre o Model e a View, controlando o fluxo de dados e as ações a serem executadas. Também pode realizar validações e manipulações dos dados antes de enviá-los para o Model ou a View.
