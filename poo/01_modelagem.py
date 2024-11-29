@@ -19,15 +19,26 @@ class Pessoas():
         # se não fosse função recursiva, poderia passar o self.nome direto
         # sem necessitar da função retorna_nome
 
-    @classmethod
-    def andar(cls):
-        print('Estou andando')
+    @classmethod #precisa receber o cls pq é o estado da classe
+    def alterar(cls):
+        cls.possui_boca = False
 
-p1 = Pessoas('Wallennon', 34, '081334')
-p2 = Pessoas('Germano', 41, '482429')
+    @staticmethod
+    def is_adulto(idade):
+        if idade >= 18:
+            return True
+        return False
 
-p1.logar_sistema()
-p2.logar_sistema()
-p1.andar()
+p1 = Pessoas('Wallennon', 34, '059761532165')
+p2 = Pessoas('Germano', 41, '315121531205')
 
-Pessoas.andar()
+# p1.logar_sistema()
+# p2.logar_sistema()
+# p1.andar()
+# Pessoas.andar()
+
+print(Pessoas.possui_boca)
+Pessoas.alterar()
+print(Pessoas.possui_boca)
+
+print(Pessoas.is_adulto(30))

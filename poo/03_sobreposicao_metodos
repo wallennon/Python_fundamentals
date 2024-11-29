@@ -1,0 +1,24 @@
+class Pessoa:
+    def __init__(self, nome,cidade):
+        self.nome = nome
+        self.cidade = cidade
+
+class Cliente(Pessoa):
+    def __init__(self, id_cliente, nome, cidade):
+        super().__init__(nome, cidade)
+        self.id_cliente = id_cliente
+        print(f'Em {cidade}, o id do cliente {nome} é: {id_cliente}')
+
+class Vendedor(Pessoa):
+    def __init__(self, id_vendedor, nome, cidade):
+        super().__init__(nome, cidade)
+        self.id_vendedor = id_vendedor
+
+
+c1 = Cliente(2, 'Germano', 'João Pessoa')
+print(c1.id_cliente)
+print(c1.nome)
+print(c1.cidade)
+
+v1 = Vendedor(1001, 'Dunga', 'Patos')
+print(v1.nome, v1.id_vendedor, v1.cidade)
