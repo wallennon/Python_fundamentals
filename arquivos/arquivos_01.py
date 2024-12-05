@@ -15,5 +15,5 @@ with open('pessoas.txt', 'r') as arquivo:
 
     for pessoa in resultado:
         pessoas.append(pessoa.split())
-
-    print(pessoas)
+        #print(pessoa) #exibe um abaixo do outro
+    print(pessoas) #exibe a lista do arquivo

@@ -1,4 +1,5 @@
 from controller import PessoaController
+from dao import PessoaDao
 
 while True:
     decisao = int(input(' Digite 1 para salvar uma pessoa:\n Digite 2 para ver as pessoas salvas em uma lista:\n Digite 0 para sair: '))
@@ -16,4 +17,11 @@ while True:
             print('Valores inválidos! Tente novamente.')
     
     elif decisao == 2:
-        print('Pessoas salvas: ')
+        resultado = PessoaDao.ler()
+        lista_pessoas = []
+
+        for pessoa in resultado:
+            dados = pessoa.strip().split(' ')
+            lista_pessoas.append(dados)
+        
+        print(lista_pessoas)
