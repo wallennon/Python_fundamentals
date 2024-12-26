@@ -24,7 +24,7 @@ class Venda:
         self.data = data
 
 
-class Forncedor:
+class Fornecedor:
     def __init__(self, nome, cnpj, telefone, categoria):
         self.nome = nome
         self.cnpj = cnpj
@@ -42,8 +42,9 @@ class Pessoa:
 
 
 class Funcionario(Pessoa):
-    def __init__(self, clt, nome, telefone, cpf, email, endereco, salario, cargo):
+    def __init__(self, clt, salario, cargo, nome, telefone, cpf, email, endereco, ):
         self.clt = clt
-        super(Funcionario, self).__init__(nome, telefone, cpf, email, endereco)
         self.salario = salario
         self.cargo = cargo
+        super(Funcionario, self).__init__(nome, telefone, cpf, email, endereco)
+        
