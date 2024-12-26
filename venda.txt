@@ -1,0 +1,4 @@
+Arroz | 10 | Alimento | Germano | Cliente | 2 | 2024-12-24
+Feij�o | 8 | Alimento | Germano | Cliente | 1 | 2024-12-24
+Arroz | 10 | Alimento | Germano | Cliente | 2 | 24/12/2024
+Feij�o | 8 | Alimento | Germano | Cliente | 1 | 24/12/2024
